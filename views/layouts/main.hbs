@@ -16,14 +16,13 @@
         <nav class="navbar navbar-customstyle sticky-top navbar-expand-md">
             <div class="container-fluid">
                 <h1 class="navbar-name">Dank Reviews</h1>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-navbar"
-                    aria-controls="portfolio-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="portfolio-navbar">
-                    <button type="button" class="btn btn-light ml-auto"><a class="loginBtn" href="">Login/Sign-up!</a></button>
-                </div>
+                {{#if logged_in}}
+                <button type="button" class="btn btn-light ml-auto" id="logout"><a class="loginBtn"
+                        href="">Logout</a></button>
+                {{else}}
+                <button type="button" class="btn btn-light ml-auto" id="login"><a class="loginBtn"
+                        href="">Login/Sign-up!</a></button>
+                {{/if}}
             </div>
         </nav>
     </header>
