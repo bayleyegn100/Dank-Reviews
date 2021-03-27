@@ -25,5 +25,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "airplane-itinerary" #Must be unique in Heroku
+          heroku_app_name: "bootcamp-project2-uw" #Must be unique in Heroku
           heroku_email: "kharam1436@gmail.com"
