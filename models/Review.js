@@ -18,9 +18,6 @@ Review.init(
     context: {
       type: DataTypes.TEXT,
       allowNull: false,
-      validate: {
-        isEmail: true,
-      },
     },
     user_id: {
       type: DataTypes.INTEGER,
