@@ -1,2 +1,16 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="row sm-4 review">
+    <div class="col-md-8">
+        <img src="#" alt="Image of the day">
+    </div>
+    <div class="col-md-4">
+        {{!-- aside --}}
+    </div>
+</div>
+{{#each reviewers as |reviewer|}}
+<div class="row sm-4 review">
+    <div class="col-10-md-">
+        <p>{{{get_emoji}}} Created by {{reviewer.user.name}} on {{format_date reviewer.date_created}}</p>
+        <p>{{reviewer.comment}}</p>
+    </div>
+</div>
+{{/each}}
