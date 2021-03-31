@@ -18,19 +18,16 @@
         </form>
     </div>
 
-    {{#if reviewers.length}}
-
-    {{#each reviewers as |reviewer|}}
+    {{#if reviews.length}}
     <div class="col-md-10 reviewer-list">
-        <h3>Current reviewers:</h3>
-
-        {{#each reviewers as |reviewer|}}
+        <h3>Current reviews:</h3>
+    {{#each reviews as |review|}}
         <div class="row mb-4">
             <div class="col-md-10">
-                <p>{{{get_emoji}}} Created by {{reviewer.user.name}} on {{format_date reviewer.date_created}}</p>
+                <p>Created by {{review.user.name}} on {{format_date review.date_created}}</p>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-sm btn-danger" data-id="{{reviewer.id}}">DELETE</button>
+                <button class="btn btn-sm btn-danger" data-id="{{review.id}}">DELETE</button>
             </div>
         </div>
         {{/each}}

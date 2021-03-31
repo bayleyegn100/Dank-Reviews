@@ -8,11 +8,10 @@
     <title>Dank Reviews</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
 <body>
-    {{!--Nav bar start--}}
     <header>
         <nav class="navbar navbar-customstyle sticky-top navbar-expand-md">
             <div class="container-fluid">
@@ -27,35 +26,10 @@
             </div>
         </nav>
     </header>
-    {{!--Nav bar end--}}
-
-    {{!--Body start--}}
     <main>
-        <div class="row">
-            <div class="col-md-6">
-            <h2>Login!</h2>
-            <form>
-                <input type="text" id="email-login" name="login" placeholder="Email">
-                <input type="text" id="password-login" name="login" placeholder="Password">
-                <button class="btn btn-primary login-form" type="submit">Login</button>
-            </form>
-            </div>
-
-            <div class="col-md-6">
-            <h2>Sign Up!</h2>
-            <form>
-                <input type="text" name="signup" id="name-signup" placeholder="Name">
-                <input type="text" name="signup" id="email-signup" placeholder="Email">
-                <input type="text" name="signup" id="password-signup" placeholder="Password">
-                <button class="btn btn-primary signup-form" type="submit">Sign Up</button>
-            </form>
-            </div>
-        </div>
+        {{{ body }}}
     </main>
-    {{!--Body end--}}
 
 </body>
-
-<script src="./js/login.js"></script>
 
 </html>
