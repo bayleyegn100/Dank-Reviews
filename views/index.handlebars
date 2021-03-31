@@ -6,11 +6,11 @@
         {{!-- aside --}}
     </div>
 </div>
-{{#each reviewers as |reviewer|}}
+{{#each reviews as |review|}}
 <div class="row sm-4 review">
     <div class="col-10-md-">
-        <p>{{{get_emoji}}} Created by {{reviewer.user.name}} on {{format_date reviewer.date_created}}</p>
-        <p>{{reviewer.comment}}</p>
+        <p>Created by {{review.user.name}} on {{format_date review.date_created}}</p>
+        <p>{{review.context}}</p>
     </div>
 </div>
 {{/each}}
