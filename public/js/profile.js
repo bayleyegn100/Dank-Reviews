@@ -6,7 +6,7 @@ const newFormHandler = async (event) => {
     if (comment) {
       const response = await fetch(`/api/reviews`, {
         method: 'POST',
-        body: JSON.stringify({ comment}),
+        body: JSON.stringify({ comment }),
         headers: {
           'Content-Type': 'application/json',
         },

@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        res.render('index', {
+        res.render('homepage', {
             reviews,
             logged_in: req.session.logged_in
         });
