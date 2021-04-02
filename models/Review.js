@@ -18,13 +18,22 @@ Review.init(
     context: {
       type: DataTypes.TEXT,
       allowNull: false,
-      validate: {
-        isEmail: true,
-      },
     },
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    image_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'image',
+        key: 'id',
+      },
     },
   },
   {
@@ -32,7 +41,7 @@ Review.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'review',
   }
 );
 
