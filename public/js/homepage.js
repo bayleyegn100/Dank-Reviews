@@ -1,7 +1,7 @@
 const newReview = async = function (event) {
     event.preventDefault();
 
-    const newReview = document.querySelector('#review').nodeValue.trim();
+    const newReview = document.querySelector('#reviewText').nodeValue.trim();
 
     if (newReview) {
         const response = await fetch(`/api/reviews`, {
