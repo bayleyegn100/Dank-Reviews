@@ -11,11 +11,6 @@ Review.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // I think a review will hava a name, if not ignore it. Debasu 
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     title: {
       type: DataTypes.STRING(100),
       allowNull: false,
