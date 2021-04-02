@@ -24,7 +24,7 @@ router.delete('/:id', withAuth, async (req, res) => {
       });
   
       if (!userData) {
-        res.status(404).json({ message: 'No user found with this id!' });
+        res.status(404).json({ message: 'No reviewer found with this id!' });
         return;
       }
   
