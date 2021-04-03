@@ -24,12 +24,19 @@
     
 
 {{#each reviews as |review|}}
-<div class="row sm-4 review">
-    <div class="col-10-md-">
-        <p>Review from {{review.user.name}}</p>
-        <p>{{review.context}}</p>
+<div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://b.thumbs.redditmedia.com/_12eJQb6IEoRj6L4wjPGBSsv4ViFXdosg9bp6NvilbA.jpg" class="card-img" alt="Cute cats!">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h4 class="card-header">Review by {{review.user.name}}</h4>
+                    <p class="card-text">{{review.context}}</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 {{/each}}
 </div>
 

@@ -23,3 +23,17 @@ a {
 .nav-item {
   font-size: 20px;
 }
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.card-text, .card-header {
+  text-align: center;
+}
+
+.card-text {
+  padding: 30px;
+}
