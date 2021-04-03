@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - 127.0.0.1:3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: bootcamp
+      MYSQL_DATABASE: bootcamp
+      MYSQL_USER: bootcamp
+      MYSQL_PASSWORD: bootcamp
+
+volumes:
+  db_data: {}

@@ -30,9 +30,11 @@
 {{#each reviews as |review|}}
 <div class="row sm-4 review">
     <div class="col-10-md-">
-        <p>Created by {{review.user.name}}</p>
+        <p>Review from {{review.user.name}}</p>
         <p>{{review.context}}</p>
     </div>
 </div>
 {{/each}}
 </div>
+
+<script src="../js/homepage.js"></script>
