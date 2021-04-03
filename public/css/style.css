@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 .navbar-customstyle {
@@ -13,4 +13,18 @@ a {
 .loginBtn {
   color: black;
   pointer-events: none;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.card-text, .card-header {
+  text-align: center;
+}
+
+.card-text {
+  padding: 30px;
 }
