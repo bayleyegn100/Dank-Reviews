@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Review } = require('../models');
 const withAuth = require('../utils/auth');
+const getRedditImage = require('./reddit.js');
 
 router.get('/', async (req, res) => {
     try {
@@ -13,11 +14,18 @@ router.get('/', async (req, res) => {
             ],
         });
 
+        const image = await getRedditImage
+        .then((result) => {
+            console.log(result[0])
+            return result[0]
+        });
+
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
         res.render('homepage', {
             reviews,
-            logged_in: req.session.logged_in
+            logged_in: req.session.logged_in,
+            image
         });
     } catch (err) {
         res.status(500).json(err);
