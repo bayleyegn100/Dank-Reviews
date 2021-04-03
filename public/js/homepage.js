@@ -1,4 +1,7 @@
-const newReview = async = function (event) {
+const loginButton = document.querySelector('#login')
+const reviewButton = document.querySelector('#review')
+
+const newReview = async function (event) {
     event.preventDefault();
 
     const newReview = document.querySelector('#reviewText').nodeValue.trim();
@@ -18,4 +21,14 @@ const newReview = async = function (event) {
     }
 };
 
-document.querySelector('#review').addEventListener('submit', newReview);
+const goLogin = function (event) {
+    event.preventDefault();
+
+    document.location.replace('/login')
+};
+
+if (reviewButton !== null) {
+    reviewButton.addEventListener('submit', newReview);
+};
+
+loginButton.addEventListener('click', goLogin);
