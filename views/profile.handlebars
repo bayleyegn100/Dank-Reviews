@@ -1,48 +1,59 @@
 <div class="container">
-<div class="row">
-    <div class="col-4"></div>
-    <div class="col-4">
-        <h2 style="text-align: center;">Welcome, {{name}}!</h2>
-        <h3 style="text-align: center;">Create a new review:</h3>
-    </div>
-    <div class="col-4"></div>
-</div>
-<div class="row sm-4 review">
-    <div class="col-md-12 d-flex justify-content-center review">
-        <div class="col-md-10 d-flex flex-column">
-            <label for="title" class="h4">Title</label><br />
-            <input type="text" id="title" value="" /><br />
-            <label for="content">review</label><br />
-            <textarea id="content" rows="20" cols="50"></textarea><br />
-            <input type="submit" class="btn btn-primary" value="Create" />
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h2 style="text-align: center;">Welcome, {{name}}!</h2>
+            <h3 style="text-align: center;">Create a new review:</h3>
         </div>
+        <div class="col-4"></div>
     </div>
-
-    {{#if reviews.length}}
-    <div class="col-md-10 reviewer-list">
-        <div class="row">
-            <h3>Current reviews:</h3> 
-        </div>
-        
-        {{#each reviews as |review|}}
-        <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="https://b.thumbs.redditmedia.com/_12eJQb6IEoRj6L4wjPGBSsv4ViFXdosg9bp6NvilbA.jpg" class="card-img" alt="Cute cats!">
+    <div class="row sm-4 review">
+        <div class="col-md-12 d-flex justify-content-center review">
+            <div class="col-md-10 d-flex flex-column">
+                <label for="title" class="h4">Title</label><br />
+                <input type="text" id="title" value="" /><br />
+                <label for="content">review</label><br />
+                <textarea id="content" rows="20" cols="50"></textarea><br />
+                <input type="submit" class="btn btn-primary" value="Create" />
             </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h4 class="card-header">Review by {{review.user.name}}</h4>
-                    <p class="card-text">{{review.context}}</p>
+        </div>
+
+        {{#if reviews.length}}
+        <div class="col-md-12 reviewer-list">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <h3>Current reviews:</h3>
                 </div>
+                <div class="col-4"></div>
             </div>
-        </div>
-    </div>
-        {{/each}}
-    </div>
-    {{/if}}
 
-</div>
+            {{#each reviews as |review|}}
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="card mb-12" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://b.thumbs.redditmedia.com/_12eJQb6IEoRj6L4wjPGBSsv4ViFXdosg9bp6NvilbA.jpg"
+                                    class="card-img" alt="Cute cats!">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-header">Review by {{review.user.name}}</h4>
+                                    <p class="card-text">{{review.context}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+
+    </div>
 </div>
 
 <script src="./js/profile.js"></script>
