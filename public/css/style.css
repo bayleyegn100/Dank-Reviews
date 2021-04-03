@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 .navbar-customstyle {
@@ -13,4 +13,13 @@ a {
 .loginBtn {
   color: black;
   pointer-events: none;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  margin-left: 40px;
+}
+
+.nav-item {
+  font-size: 20px;
 }
