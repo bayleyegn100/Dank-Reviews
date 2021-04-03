@@ -2,7 +2,7 @@
 <div class="row image-of-day">
     <div class="col-2"></div>
     <div class="col-md-8">
-        <img src="{{image.image}}" alt="" width="500" height="500">   
+        <img src="{{image.image}}" alt="{{image.title}}" width="500" height="500">   
     </div>
     <div class="col-2"></div>
 </div>
@@ -21,7 +21,6 @@
 {{else}}
 <h3>Login or Create a Profile to Write Reviews!</h3>
 {{/if}}
-    
 
 {{#each reviews as |review|}}
 <div class="card mb-3" style="max-width: 540px;">
