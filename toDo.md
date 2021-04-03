@@ -11,3 +11,5 @@ create image table in DB
 create image model
 
 store image url once a review is submitted. 
+
+User can delete their old reviews.
