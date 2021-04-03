@@ -31,4 +31,6 @@ if (reviewButton !== null) {
     reviewButton.addEventListener('submit', newReview);
 };
 
+if (loginButton !== null) {
 loginButton.addEventListener('click', goLogin);
+};
