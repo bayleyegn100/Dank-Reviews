@@ -16,7 +16,17 @@
     <header>
         <nav class="navbar navbar-customstyle sticky-top navbar-expand-md">
             <div class="container-fluid">
-                <a href="/"><h1 class="navbar-name">Dank Reviews</h1></a>
+                <a href="/">
+                    <h1 class="navbar-name">Dank Reviews</h1>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/profile">profile <span class="sr-only">(current)</span></a>
+                    </ul>
+                </div>
+
                 {{#if logged_in}}
                 <button type="button" class="btn btn-light ml-auto" id="logout"><a class="loginBtn"
                         href="">Logout</a></button>
@@ -39,5 +49,6 @@
 {{#if logged_in}}
 <script src="../../js/logout.js"></script>
 {{/if}}
+
 
 </html>
