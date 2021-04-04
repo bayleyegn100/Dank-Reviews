@@ -1,10 +1,10 @@
 <div class="container">
     <div class="row image-of-day">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="col-2"></div>
+        <div class="col-8">
             <img src="{{image.image}}" alt="" width="500" height="500" class="center">
         </div>
-        <div class="col-4"></div>
+        <div class="col-2"></div>
     </div>
     {{!-- section where you write posts IF logged in. --}}
     {{#if logged_in}}
@@ -12,17 +12,15 @@
         <div class="col-4"></div>
         <div class="col-4">
             <h3>Write a review!</h3>
-        </div>
-        <div class="col-4"></div>
-
         <div class="form-group">
             <label for="review">Review:</label>
             <textarea class="form-input" id="reviewText" name="review"></textarea>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary" id="review">Create</button>
+            <button type="submit" class="btn btn-primary center" id="review">Create</button>
         </div>
-
+    </div>
+        <div class="col-4"></div>
     </div>
     {{else}}
     <h3>Login or Create a Profile to Write Reviews!</h3>
