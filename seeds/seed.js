@@ -13,13 +13,12 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  const images = await Image.bulkCreate(imageData)
+
 
   for (const review of reviewData) {
     await Review.create({
       ...review,
       user_id: users[Math.floor(Math.random() * users.length)].id,
-      image_id: images[Math.floor(Math.random() * images.length)].id
     });
   }
 
