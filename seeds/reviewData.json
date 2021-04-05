@@ -1,11 +1,14 @@
 [
     {
-      "context": "This is an adorable cat."
+      "context": "This is an adorable cat.",
+      "image_link": "https://preview.redd.it/15guau8kder61.png?width=640&crop=smart&auto=webp&s=0317d168802aef9679e1250cf0dbe210867af867"
     },
     {
-      "context": "OMG LOOK AT THIS DOG!!!"
+      "context": "OMG LOOK AT THIS DOG!!!",
+      "image_link": "https://preview.redd.it/15guau8kder61.png?width=640&crop=smart&auto=webp&s=0317d168802aef9679e1250cf0dbe210867af867"
     },
     {
-      "context": "I've seen cooler parrots."
+      "context": "I've seen cooler parrots.",
+      "image_link": "https://preview.redd.it/15guau8kder61.png?width=640&crop=smart&auto=webp&s=0317d168802aef9679e1250cf0dbe210867af867"
     }
   ]
