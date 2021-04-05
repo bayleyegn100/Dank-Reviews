@@ -10,11 +10,7 @@ store image url once a review is submitted.
 
 User can delete their old reviews.
 
-Create image route in controller (Mike)
-
 Homepage needs review box centered (Jesse)
-
-Get random reddit image to appear on Homepage. Currently uses the same image over and over again. 
 
 ## Not Priority
 

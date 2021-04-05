@@ -14,11 +14,18 @@ router.get('/', async (req, res) => {
             ],
         });
 
-        const image = await getRedditImage
-        .then((result) => {
-            console.log(result[0])
-            return result[0]
-        });
+        // const image = await getRedditImage
+        // .then((result) => {
+        //     console.log(result[0])
+        //     return result[0]
+        // });
+
+        //Jason's fix for reddit.image refresh problem
+        const image = await getRedditImage()
+            .then((result) => {
+                console.log('result[0]: ', result[0])
+                return result[0]
+            }).catch(err => console.log(`err: `, err))
 
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
