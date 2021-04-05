@@ -11,10 +11,6 @@ Review.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
     context: {
       type: DataTypes.TEXT,
       allowNull: false,

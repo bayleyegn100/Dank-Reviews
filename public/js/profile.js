@@ -1,12 +1,12 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const comment = document.querySelector('#reviewer-comment').value.trim();
+    const context = document.querySelector('#content').value.trim();
   
-    if (comment) {
+    if (context) {
       const response = await fetch(`/api/reviews`, {
         method: 'POST',
-        body: JSON.stringify({ comment }),
+        body: JSON.stringify({ context }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -37,10 +37,11 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-reviewer-form')
-    .addEventListener('submit', newFormHandler);
+    .querySelector('#createReview')
+    .addEventListener('click', newFormHandler);
   
-  document
-    .querySelector('.reviewer-list')
-    .addEventListener('click', delButtonHandler);
+    let deleteButtons = document.querySelectorAll('.delete-button')
+    deleteButtons.forEach((btn) => {
+      btn.addEventListener("click", delButtonHandler)
+    });
   
