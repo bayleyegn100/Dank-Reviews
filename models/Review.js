@@ -23,13 +23,9 @@ Review.init(
         key: 'id',
       },
     },
-    image_id: {
-      type: DataTypes.INTEGER,
+    image_link: {
+      type: DataTypes.TEXT,
       allowNull: false,
-      references: {
-        model: 'image',
-        key: 'id',
-      },
     },
   },
   {
