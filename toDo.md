@@ -8,8 +8,6 @@ Create image model with id and image URL. (Parm, Mike, Patrick, Jason)
 
 store image url once a review is submitted. 
 
-User can delete their old reviews.
-
 Homepage needs review box centered (Jesse)
 
 ## Not Priority

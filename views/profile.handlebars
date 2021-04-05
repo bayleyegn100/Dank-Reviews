@@ -39,12 +39,12 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h4 class="card-header">Review by {{review.user.name}}</h4>
+                                    <h4 class="card-header" >Review by {{review.user.name}}</h4>
                                     <p class="card-text">{{review.context}}</p>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-danger delete-button" style="text-align: center;">DELETE</button>
+                        <button class="btn btn-danger delete-button" style="text-align: center;" data-id={{review.id}}>Delete Review</button>
                     </div>
                 </div>
                 <div class="col-4"></div>
