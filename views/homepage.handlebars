@@ -1,7 +1,7 @@
 <div class="container d-flex flex-wrap">
     <div class="image-of-day col-md-9">
         <div>
-            <img src="{{image.image}}" alt="" width="100vh" height="100%" class="center" id="currentImage">
+            <img src="{{image.image}}" alt="" max-width="75%" max-height="75%" class="center" id="currentImage">
         </div>
         {{!-- section where you write posts IF logged in. --}}
         {{#if logged_in}}
