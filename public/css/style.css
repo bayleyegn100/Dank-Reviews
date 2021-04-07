@@ -41,6 +41,7 @@ a {
 .card-header,
 h3 {
   text-align: center;
+  font-size: medium;
 }
 
 .card-text {
