@@ -1,6 +1,6 @@
 body {
-  font: 20px  Verdana, Geneva, Tahoma, sans-serif;
-  
+font: 20px  Verdana, Geneva, Tahoma, sans-serif;
+background-color: rgb(20, 20, 20);
 }
 
 a {
@@ -12,7 +12,9 @@ a {
   color: white;
 }
 .loginBtn {
-  color: black;
+  color: #00b7ff;
+  background-color: transparent;
+  border-color: #ccc;
   pointer-events: none;
 }
 
@@ -58,12 +60,24 @@ h3 {
   /* height: 200px;
   border: 3px solid green; */
 }
-
+.redditImage {
+  z-index: 0;;
+}
 .redditImage:hover {
-  transform: scale(5);
+transform: scale(3);
+  z-index:+1;
+  position:relative;
 }
 #content #review {
   font-size: medium;
   font-style: normal;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.no-gutters {
+  background-color: rgb(20, 20, 20);
+  border-color: grey;
+  color: white;
+}
+.container {
+  color: white;
 }
