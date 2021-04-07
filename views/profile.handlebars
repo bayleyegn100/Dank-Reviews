@@ -3,19 +3,12 @@
         <div class="col-4"></div>
         <div class="col-4">
             <h2 style="text-align: center;">Welcome, {{name}}!</h2>
-            <h3 style="text-align: center;">Create a new review:</h3>
+            <h3>Here is where you will begin your journey as a certified meme reviewer. You are able to see your past reviews here on your profile page! If you want to expand your review list, get started <a href="/">here!</a></h3>
         </div>
         <div class="col-4"></div>
     </div>
     
     <div class="row sm-4 review">
-        <div class="col-md-12 d-flex justify-content-center review">
-            <div class="col-md-10 d-flex flex-column">
-                <label for="content">Review</label><br />
-                <textarea id="content" rows="20" cols="50"></textarea><br />
-                <button type="submit" class="btn btn-primary" id="createReview">Create</button>
-            </div>
-        </div>
 
         {{#if reviews.length}}
         <div class="col-md-12 reviewer-list">
