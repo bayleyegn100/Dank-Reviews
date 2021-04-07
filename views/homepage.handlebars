@@ -23,14 +23,14 @@
     <div class="col-md-3">
         {{#each reviews as |review|}}
         <div class="row">
-            <div class="homepage-review" style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-4">
+            <div class="homepage-review">
+                <div class="row no-gutters card mt-2 mb-2">
+                    <div class="col-4 d-flex">
                         <img src="{{review.image_link}}" class="card-img redditImage" alt="Cute cats!">
+                        <h4 class="card-header">Review by {{review.user.name}}</h4>
                     </div>
                     <div class="col-8">
                         <div class="card-body">
-                            <h4 class="card-header">Review by {{review.user.name}}</h4>
                             <p class="card-text">{{review.context}}</p>
                         </div>
                     </div>
