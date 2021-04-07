@@ -1,5 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(20, 20, 20);
 }
 
 a {
@@ -11,7 +12,9 @@ a {
   color: white;
 }
 .loginBtn {
-  color: black;
+  color: #00b7ff;
+  background-color: transparent;
+  border-color: #ccc;
   pointer-events: none;
 }
 
@@ -63,4 +66,14 @@ h3 {
   transform: scale(3);
   z-index:+1;
   position:relative;
+}
+
+.no-gutters {
+  background-color: rgb(20, 20, 20);
+  border-color: grey;
+  color: white;
+}
+
+.container {
+  color: white;
 }
