@@ -1,29 +1,17 @@
 <div class="container">
     <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="col-6 mt-5">
             <h2 style="text-align: center;">Welcome, {{name}}!</h2>
-            <h3>Here is where you will begin your journey as a certified meme reviewer. You are able to see your past reviews here on your profile page! If you want to expand your review list, get started <a href="/">here!</a></h3>
-        </div>
-        <div class="col-4"></div>
-    </div>
-    
-    <div class="row sm-4 review">
-
+            <h3>Here is where you will begin your journey as a certified meme reviewer. You are able to see your past reviews here on your profile page! If you want to expand your review list, get started <a href="/">here!</a></h3>     
+    </div> 
+    <div class="col-6 review mt-5">
         {{#if reviews.length}}
         <div class="col-md-12 reviewer-list">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <h3>Your reviews:</h3>
-                </div>
-                <div class="col-4"></div>
+            <div class="row" style="justify-content: center;">
+                    <h2>Your reviews</h2>
             </div>
-
             {{#each reviews as |review|}}
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
                     <div class="card mb-12" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -38,13 +26,11 @@
                         </div>
                         <button class="btn btn-danger delete-button" style="text-align: center;" data-id={{review.id}}>Delete Review</button>
                     </div>
-                </div>
-                <div class="col-4"></div>
             </div>
             {{/each}}
         </div>
         {{/if}}
-
+    </div>
     </div>
 </div>
 
