@@ -2,7 +2,7 @@
     <div class="row image-of-day">
         <div class="col-2"></div>
         <div class="col-8">
-            <img src="{{image.image}}" alt="" width="500" height="500" class="center" id="currentImage">
+            <img src="{{image.image}}" alt="" max-width="100%" max-height="100%" class="center" id="currentImage">
         </div>
         <div class="col-2"></div>
     </div>
@@ -25,7 +25,6 @@
     {{else}}
     <h3>Login or Create a Profile to Write Reviews!</h3>
     {{/if}}
-
 
     {{#each reviews as |review|}}
     <div class="row">
