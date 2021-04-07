@@ -1,6 +1,6 @@
 body {
-  font: 20px Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(20, 20, 20);
+font: 20px  Verdana, Geneva, Tahoma, sans-serif;
+background-color: rgb(20, 20, 20);
 }
 
 a {
@@ -12,7 +12,9 @@ a {
   color: white;
 }
 .loginBtn {
-  color: black;
+  color: #00b7ff;
+  background-color: transparent;
+  border-color: #ccc;
   pointer-events: none;
 }
 
@@ -22,7 +24,10 @@ a {
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 20px Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-name {
+  font-size: 30px Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center {
@@ -69,7 +74,6 @@ h3 {
 .redditImage {
   z-index: 0;
 }
-
 .redditImage:hover {
   transform: scale(3);
   z-index: +1;
@@ -79,7 +83,7 @@ h3 {
 #content #review {
   font-size: medium;
   font-style: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .no-gutters {
   background-color: rgb(20, 20, 20);
@@ -94,3 +98,4 @@ h3 {
   color: white;
   background-color: purple;
 }
+
