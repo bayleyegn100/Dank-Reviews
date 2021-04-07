@@ -58,8 +58,14 @@ h3 {
   border: 3px solid green; */
 }
 
+.redditImage {
+  z-index: 0;;
+}
+
 .redditImage:hover {
-  transform: scale(5);
+  transform: scale(3);
+  z-index:+1;
+  position:relative;
 }
 
 .no-gutters {
