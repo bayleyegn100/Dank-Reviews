@@ -1,5 +1,6 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px  Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 a {
@@ -21,7 +22,10 @@ a {
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 20px Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-name {
+  font-size: 30px Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center {
@@ -57,4 +61,9 @@ h3 {
 
 .redditImage:hover {
   transform: scale(5);
+}
+#content #review {
+  font-size: medium;
+  font-style: normal;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
