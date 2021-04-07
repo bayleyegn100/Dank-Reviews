@@ -3,7 +3,6 @@ const { Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 // use auth to leave review 
 router.post('/', withAuth, async (req, res) => {
-    console.log(req.body);
     try {
         const userReview = await Review.create({
             context: req.body.newReview,
@@ -12,13 +11,11 @@ router.post('/', withAuth, async (req, res) => {
         });
         res.status(200).json(userReview);
     } catch (err) {
-      console.log(err)
         res.status(500).json(err)
     }
 });
 
 router.delete('/:id', withAuth, async (req, res) => {
-  console.log(req.params.id)
     try {
       const reviewData = await Review.destroy({
         where: {  
@@ -34,9 +31,7 @@ router.delete('/:id', withAuth, async (req, res) => {
   
       res.status(200).json(reviewData);
     } catch (err) {
-      console.log(err);
       res.status(500).json(err);
-    
     }
   });
 
