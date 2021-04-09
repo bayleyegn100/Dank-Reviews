@@ -10,6 +10,7 @@ a {
 .navbar-customstyle {
   background-color: #ff3333;
   color: white;
+  z-index: 0;
 }
 .loginBtn {
   color: #00b7ff;
