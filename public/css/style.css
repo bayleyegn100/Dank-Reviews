@@ -10,7 +10,6 @@ a {
 .navbar-customstyle {
   background-color: #ff3333;
   color: white;
-  z-index: 0;
 }
 .loginBtn {
   color: #00b7ff;
@@ -98,6 +97,6 @@ h3 {
 
 .card {
   color: white;
-  background-color: rgb(20, 20, 20);
+  background-color: purple;
 }
 
