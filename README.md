@@ -26,7 +26,7 @@ This website is created to have user review memes and give their inputs on the m
     
 ## Usage
 
-![Screenshot1]()
+![Screenshot1.jpg]()
 
 ## License
     
